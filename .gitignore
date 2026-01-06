@@ -1,1 +1,27 @@
+# Secrets
 .env
+*.env
+
+# Logs and tmp
+*.log
+*.tmp
+*.swp
+
+# Elastic agent binaries / archives if you ever drop them in here
+elastic-agent-*
+*.tar.gz
+*.tgz
+*.zip
+
+# Docker junk if you ever add volumes locally
+data/
+tmp/
+
+# VSCode / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+

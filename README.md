@@ -12,9 +12,18 @@ This project demonstrates my ability to deploy, configure, and operationalize an
 -
 - Linux Endpoint with Elastic Defend
 -
+
+- Kibana
+
+- Fleet Server
+
+- Elastic Agent
+
+- Linux Endpoint with Elastic Defend
+
 - SIEM detection rules & alerting
 
-Purpose of the project:
+- Purpose of the project:
 
 1. Build a functional detection pipeline
 
@@ -25,6 +34,15 @@ Purpose of the project:
 4. Trigger & analyze real alerts
 
 5.Visualize logs and detections in Kibana
+- Build a functional detection pipeline
+
+- Collect security telemetry from a Linux host
+
+- Deploy Elastic Defend
+
+- Trigger & analyze real alerts
+
+- Visualize logs and detections in Kibana
 
 [Linux Host] → Elastic Agent → Fleet Server → Elasticsearch → SIEM Alerts (Kibana)
 
@@ -106,5 +124,16 @@ These confirmed that:
 
 7. Troubleshooting Fleet/Agent connectivity
 
+1. Linux endpoint security
+
+2. Docker orchestration
+
+3. Event log analysis
+
+4. Rule tuning
+
+5. Security monitoring foundations
+
+6. Troubleshooting Fleet/Agent connectivity
 
 
