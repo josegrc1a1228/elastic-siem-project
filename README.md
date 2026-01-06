@@ -3,16 +3,15 @@ Elastic SIEM Home Lab Project
 This project demonstrates my ability to deploy, configure, and operationalize an Elastic SIEM environment using:
 
 - Elasticsearch
--
-- Kibana
--
-- Fleet Server
--
-- Elastic Agent
--
-- Linux Endpoint with Elastic Defend
--
 
+- Kibana
+
+- Fleet Server
+
+- Elastic Agent
+
+- Linux Endpoint with Elastic Defend
+  
 - Kibana
 
 - Fleet Server
@@ -23,7 +22,7 @@ This project demonstrates my ability to deploy, configure, and operationalize an
 
 - SIEM detection rules & alerting
 
-- Purpose of the project:
+  Purpose of the project:
 
 1. Build a functional detection pipeline
 
@@ -33,16 +32,17 @@ This project demonstrates my ability to deploy, configure, and operationalize an
 
 4. Trigger & analyze real alerts
 
-5.Visualize logs and detections in Kibana
-- Build a functional detection pipeline
+5. Visualize logs and detections in Kibana
 
-- Collect security telemetry from a Linux host
+6. Build a functional detection pipeline
 
-- Deploy Elastic Defend
+7. Collect security telemetry from a Linux host
 
-- Trigger & analyze real alerts
+8. Deploy Elastic Defend
 
-- Visualize logs and detections in Kibana
+9. Trigger & analyze real alerts
+
+10. Visualize logs and detections in Kibana
 
 [Linux Host] → Elastic Agent → Fleet Server → Elasticsearch → SIEM Alerts (Kibana)
 
@@ -124,16 +124,16 @@ These confirmed that:
 
 7. Troubleshooting Fleet/Agent connectivity
 
-1. Linux endpoint security
+8. Linux endpoint security
 
-2. Docker orchestration
+9. Docker orchestration
 
-3. Event log analysis
+10. Event log analysis
 
-4. Rule tuning
+11. Rule tuning
 
-5. Security monitoring foundations
+12. Security monitoring foundations
 
-6. Troubleshooting Fleet/Agent connectivity
+13. Troubleshooting Fleet/Agent connectivity
 
 
