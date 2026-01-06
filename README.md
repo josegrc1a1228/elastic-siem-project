@@ -41,21 +41,21 @@ Purpose of the project:
 
  Deployment Steps (Summary)
 
-Set up Docker-based ELK stack
+1. Set up Docker-based ELK stack
 
-Configure Fleet Server + policies
+2. Configure Fleet Server + policies
 
-Install Elastic Agent on Linux host
+3. Install Elastic Agent on Linux host
 
-Enable Elastic Defend integration
+4. Enable Elastic Defend integration
 
-Turn on over 1,200 SIEM rules
+5. Turn on over 1,200 SIEM rules
 
-Trigger test alerts (systemctl event, custom rule)
+6. Trigger test alerts (systemctl event, custom rule)
 
-Validate logs via Discover
+7. Validate logs via Discover
 
-View alerts via Security → Alerts
+8. View alerts via Security → Alerts
 
 Screenshots
 ✔️ Fleet Agents – Both Healthy
