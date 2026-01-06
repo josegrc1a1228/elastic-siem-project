@@ -59,7 +59,7 @@ Purpose of the project:
 
 Screenshots
 ✔️ Fleet Agents – Both Healthy
-</home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 15-28-15.png>
+<img width="1224" height="482" alt="Screenshot from 2026-01-06 16-08-23" src="https://github.com/user-attachments/assets/f47b98ed-7643-4dfe-a7d5-7529072174ae" />
 ✔️ SIEM Alerts – Working Alerts Triggered
 </home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 15-29-57.png>
 ✔️ Detection Rules – Enabled
