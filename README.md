@@ -59,15 +59,19 @@ Purpose of the project:
 
 Screenshots
 ✔️ Fleet Agents – Both Healthy
-<img width="1224" height="482" alt="Screenshot from 2026-01-06 16-08-23" src="https://github.com/user-attachments/assets/f47b98ed-7643-4dfe-a7d5-7529072174ae" />
+<img width="1248" height="681" alt="Screenshot from 2026-01-06 15-28-15" src="https://github.com/user-attachments/assets/5863090f-d871-439e-b320-c3cd9df29d47" />
+
 ✔️ SIEM Alerts – Working Alerts Triggered
-</home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 15-29-57.png>
+<img width="2493" height="939" alt="Screenshot from 2026-01-06 15-29-57" src="https://github.com/user-attachments/assets/aa7cfde7-9bd0-4c7b-8dc5-01cf9c30e88b" />
+
 ✔️ Detection Rules – Enabled
-</home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 15-31-53.png>
+<img width="2489" height="1233" alt="Screenshot from 2026-01-06 15-31-53" src="https://github.com/user-attachments/assets/273a00d3-55c1-4298-91a0-83f3986df79c" />
+
 ✔️ Discover View – Logs Flowing
-</home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 16-11-14.png>
+<img width="2494" height="1293" alt="Screenshot from 2026-01-06 16-11-14" src="https://github.com/user-attachments/assets/10564d4b-c359-408a-bdf9-0694086153c9" />
+
 ✔️ Docker Status + Agent Status
-</home/adminn/Pictures/Screenshots/Screenshot from 2026-01-06 16-08-23.png>
+<img width="1224" height="482" alt="Screenshot from 2026-01-06 16-08-23" src="https://github.com/user-attachments/assets/339c2575-5254-427c-bc99-81b6fe9a1036" />
 
 
 Alerts Generated
