@@ -44,7 +44,22 @@ This project demonstrates my ability to deploy, configure, and operationalize an
 
 10. Visualize logs and detections in Kibana
 
-[Linux Host] → Elastic Agent → Fleet Server → Elasticsearch → SIEM Alerts (Kibana)
+## Architecture
+
+```mermaid
+flowchart LR
+    subgraph Host[1930s OptiPlex SIEM Host]
+        ES[(Elasticsearch\nDocker Container)]
+        KB[Kibana\nDocker Container]
+        FS[Fleet Server\nElastic Agent (Docker)]
+    end
+
+    EP[Linux Endpoint\nElastic Agent + Endpoint Security] -->|Check-in, logs, alerts| FS
+    FS -->|Ingests data into| ES
+    ES -->|SIEM data, alerts| KB
+
+    KB -->|Analyst views\nalerts & dashboards| User[(You)]
+```
 
 
 | Component            | Purpose                          |
