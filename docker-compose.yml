@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:8.12.2
@@ -34,7 +36,12 @@ services:
       - XPACK_SECURITY_ENABLED=true
       - XPACK_FLEET_ENABLED=true
       - XPACK_FLEET_AGENTS_ELASTICSEARCH_HOSTS=["http://elasticsearch:9200"]
-      - XPACK_FLEET_AGENTS_FLEET_SERVER_HOSTS=["https://10.0.0.52:8220"]
+      # Use a placeholder Fleet URL that agents can reach – safe for GitHub
+      - XPACK_FLEET_AGENTS_FLEET_SERVER_HOSTS=["https://FLEET_SERVER_IP_OR_DNS:8220"]
+      # Use env vars instead of hardcoded encryption keys
+      - XPACK_ENCRYPTEDSAVEDOBJECTS_ENCRYPTIONKEY=${ENCRYPTED_SAVED_OBJECTS_KEY}
+      - XPACK_SECURITY_ENCRYPTIONKEY=${SECURITY_ENCRYPTION_KEY}
+      - XPACK_REPORTING_ENCRYPTIONKEY=${REPORTING_ENCRYPTION_KEY}
     ports:
       - "5601:5601"
     networks:
@@ -56,7 +63,8 @@ services:
       - KIBANA_FLEET_HOST=http://kibana:5601
       - KIBANA_FLEET_USERNAME=elastic
       - KIBANA_FLEET_PASSWORD=${ELASTIC_PASSWORD}
-      - FLEET_URL=https://10.0.0.52:8220
+      # Safe placeholder – public repo friendly
+      - FLEET_URL=https://FLEET_SERVER_IP_OR_DNS:8220
     ports:
       - "8220:8220"
     networks:
