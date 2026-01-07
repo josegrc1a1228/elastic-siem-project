@@ -142,7 +142,7 @@ flowchart LR
   subgraph Host["OptiPlex SIEM Host"]
     ES[(Elasticsearch<br/>Docker Container)]
     KB[Kibana<br/>Docker Container]
-    FS[Fleet Server<br/>Elastic Agent (Docker)]
+    FS[Fleet Server<br/>ElasticAgent (Docker)]
   end
 
   EP[Linux Endpoint<br/>Elastic Agent + Endpoint Security] -->|Check-in, logs, alerts| FS
