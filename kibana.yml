@@ -1,0 +1,58 @@
+# ================================
+# Kibana basic settings
+# ================================
+
+server.name: kibana
+server.host: "0.0.0.0"
+server.port: 5601
+
+# ================================
+# Elasticsearch connection
+# ================================
+
+elasticsearch.hosts: ["http://127.0.0.1:9200"]
+
+# If you enable Elasticsearch security with TLS and credentials, you’d set:
+# elasticsearch.username: "kibana_system"
+# elasticsearch.password: "YOUR_PASSWORD"
+# elasticsearch.ssl.verificationMode: "certificate"
+# elasticsearch.ssl.certificateAuthorities: ["/path/to/ca.crt"]
+
+# ================================
+# Saved objects encryption keys
+# (These are safe example values – no real secrets here)
+# ================================
+
+xpack.encryptedSavedObjects.encryptionKey: "example_encrypted_saved_objects_key_32_chars"
+xpack.security.encryptionKey: "example_security_encryption_key_32_chars"
+xpack.reporting.encryptionKey: "example_reporting_encryption_key_32_chars"
+
+# ================================
+# Security
+# ================================
+
+xpack.security.enabled: true
+
+# ================================
+# Fleet / Elastic Agent / Endpoint
+# ================================
+
+xpack.fleet.enabled: true
+xpack.fleet.agents.enabled: true
+
+# Fleet Server hosts (how agents reach Fleet Server)
+xpack.fleet.agents.fleet_server.hosts: ["https://10.0.0.52:8220"]
+
+# Default output – force agents to use 127.0.0.1 when running on the host
+xpack.fleet.outputs:
+  - id: fleet-default-output
+    name: default
+    type: elasticsearch
+    hosts: ["http://127.0.0.1:9200"]
+    is_default: true
+    is_default_monitoring: true
+
+# ================================
+# Logging (optional)
+# ================================
+logging.root.level: info
